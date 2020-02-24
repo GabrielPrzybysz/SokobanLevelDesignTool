@@ -98,6 +98,11 @@ namespace SokobanLD
             selectedColorButton.BackColor = Color.Green;
             _selectedColor = 5;
         }
+        private void PlayerOnPoint_Click(object sender, EventArgs e)
+        {
+            selectedColorButton.BackColor = Color.Gray;
+            _selectedColor = 6;
+        }
 
         //Finish
         private void finish_Click(object sender, EventArgs e)
@@ -128,7 +133,8 @@ namespace SokobanLD
             Player = 2,
             Point = 3,
             OnPoint = 4,
-            Item = 5
+            Item = 5,
+            PlayerOnPoint = 6
         }
 
         public Button Btn { get; set; }
@@ -169,7 +175,10 @@ namespace SokobanLD
                     Btn.BackColor = Color.Green;
                     Index = index;
                     break;
-
+                case (int)SlotValue.PlayerOnPoint:
+                    Btn.BackColor = Color.Gray;
+                    Index = index;
+                    break;
             }        
         }
     }

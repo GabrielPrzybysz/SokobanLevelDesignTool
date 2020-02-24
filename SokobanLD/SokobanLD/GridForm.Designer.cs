@@ -43,13 +43,15 @@
             this.selectedColorButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.finish = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.PlayerOnPoint = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // item
             // 
             this.item.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.item.BackColor = System.Drawing.Color.Lime;
-            this.item.Location = new System.Drawing.Point(872, 575);
+            this.item.Location = new System.Drawing.Point(841, 544);
             this.item.Name = "item";
             this.item.Size = new System.Drawing.Size(30, 30);
             this.item.TabIndex = 0;
@@ -60,7 +62,7 @@
             // 
             this.onPoint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.onPoint.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.onPoint.Location = new System.Drawing.Point(872, 539);
+            this.onPoint.Location = new System.Drawing.Point(841, 508);
             this.onPoint.Name = "onPoint";
             this.onPoint.Size = new System.Drawing.Size(30, 30);
             this.onPoint.TabIndex = 1;
@@ -71,7 +73,7 @@
             // 
             this.point.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.point.BackColor = System.Drawing.Color.Red;
-            this.point.Location = new System.Drawing.Point(872, 503);
+            this.point.Location = new System.Drawing.Point(841, 472);
             this.point.Name = "point";
             this.point.Size = new System.Drawing.Size(30, 30);
             this.point.TabIndex = 2;
@@ -82,7 +84,7 @@
             // 
             this.free.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.free.BackColor = System.Drawing.Color.White;
-            this.free.Location = new System.Drawing.Point(872, 395);
+            this.free.Location = new System.Drawing.Point(841, 364);
             this.free.Name = "free";
             this.free.Size = new System.Drawing.Size(30, 30);
             this.free.TabIndex = 5;
@@ -93,7 +95,7 @@
             // 
             this.wall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.wall.BackColor = System.Drawing.Color.Black;
-            this.wall.Location = new System.Drawing.Point(872, 431);
+            this.wall.Location = new System.Drawing.Point(841, 400);
             this.wall.Name = "wall";
             this.wall.Size = new System.Drawing.Size(30, 30);
             this.wall.TabIndex = 4;
@@ -104,7 +106,7 @@
             // 
             this.player.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.player.BackColor = System.Drawing.Color.Blue;
-            this.player.Location = new System.Drawing.Point(872, 467);
+            this.player.Location = new System.Drawing.Point(841, 436);
             this.player.Name = "player";
             this.player.Size = new System.Drawing.Size(30, 30);
             this.player.TabIndex = 3;
@@ -116,7 +118,7 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(927, 399);
+            this.label1.Location = new System.Drawing.Point(896, 368);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(43, 20);
             this.label1.TabIndex = 6;
@@ -127,7 +129,7 @@
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(927, 435);
+            this.label2.Location = new System.Drawing.Point(896, 404);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 20);
             this.label2.TabIndex = 7;
@@ -138,7 +140,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(927, 471);
+            this.label3.Location = new System.Drawing.Point(896, 440);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(58, 20);
             this.label3.TabIndex = 8;
@@ -149,7 +151,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(927, 507);
+            this.label4.Location = new System.Drawing.Point(896, 476);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 20);
             this.label4.TabIndex = 9;
@@ -160,7 +162,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(927, 543);
+            this.label5.Location = new System.Drawing.Point(896, 512);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(71, 20);
             this.label5.TabIndex = 10;
@@ -171,7 +173,7 @@
             this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(927, 579);
+            this.label6.Location = new System.Drawing.Point(896, 548);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(44, 20);
             this.label6.TabIndex = 11;
@@ -210,11 +212,35 @@
             this.finish.UseVisualStyleBackColor = true;
             this.finish.Click += new System.EventHandler(this.finish_Click);
             // 
+            // label8
+            // 
+            this.label8.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(896, 586);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(120, 20);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "PlayerOnPoint";
+            // 
+            // PlayerOnPoint
+            // 
+            this.PlayerOnPoint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.PlayerOnPoint.BackColor = System.Drawing.Color.Gray;
+            this.PlayerOnPoint.Location = new System.Drawing.Point(842, 582);
+            this.PlayerOnPoint.Name = "PlayerOnPoint";
+            this.PlayerOnPoint.Size = new System.Drawing.Size(30, 30);
+            this.PlayerOnPoint.TabIndex = 15;
+            this.PlayerOnPoint.UseVisualStyleBackColor = false;
+            this.PlayerOnPoint.Click += new System.EventHandler(this.PlayerOnPoint_Click);
+            // 
             // GridForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1022, 615);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.PlayerOnPoint);
             this.Controls.Add(this.finish);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.selectedColorButton);
@@ -255,5 +281,7 @@
         private System.Windows.Forms.Button selectedColorButton;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button finish;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button PlayerOnPoint;
     }
 }
