@@ -19,7 +19,7 @@
 - **Now select a color**
 - **Click in the square that you want to add**
 - **When everything is settled click in "Finish"**
-<img src="https://i.ibb.co/5hvhLW6/aa.png" alt="aa" border="0">
+<img src="https://i.ibb.co/5hvhLW6/aa.png" alt="aa" border="0" width="525px" height="325px">
 
 - **Now click on load button, and you have the matrix indices**
 <img src="https://i.ibb.co/KLRNtqf/asdasdasd.png" alt="asdasdasd" border="0">
