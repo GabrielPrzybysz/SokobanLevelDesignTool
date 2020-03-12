@@ -1,10 +1,16 @@
 # SokobanLevelDesignTool
 
-<h2>Intro</h2>
+
+## 🚩 Intro
+
+
 <p>This tool helps you to create levels in Sokoban games, with a simple UI, you can generate a lot of levels in a short time.<br> But is easily adapt the tool for any matrix-based game.</p>
 
 <br>
-<h2>How It Works</h2>
+
+
+## 🔨 Usage
+
 
 - **First select your width and height**
 - **Now click in go to the grid**
